@@ -1,22 +1,31 @@
 <html>
 <body>
 <h1>Technical Notes</h1>
-Data used for tain the model
-A data frame with 3000 observations on the following 12 variables.
-year: Year that wage information was recorded
-age: Age of worker
-maritl
-A factor with levels 1. Never Married 2. Married 3. Widowed 4. Divorced and 5. Separated indicating marital status
-race: A factor with levels 1. White 2. Black 3. Asian and 4. Other indicating race
-education: A factor with levels 1. < HS Grad 2. HS Grad 3. Some College 4. College Grad and 5. Advanced Degree indicating education level
+The data are loaded from ISLR package.
+
+A data frame with 3000 observations on the 12 variables.
+Two of them, sex and region have been removed because they have always the same value.
+
+<h2>Data used for train the model</h2>
+<ul>
+<li>year: Year that wage information was recorded</li>
+<li>age: Age of worker</li>
+<li>maritl: A factor with levels 1. Never Married 2. Married 3. Widowed 4. Divorced and 5. Separated indicating marital status</li>
+<li>race: A factor with levels 1. White 2. Black 3. Asian and 4. Other indicating race</li>
+<li>education: A factor with levels 1. < HS Grad 2. HS Grad 3. Some College 4. College Grad and 5. Advanced Degree indicating education level</li>
 
 
-jobclass: A factor with levels 1. Industrial and 2. Information indicating type of job
-health: A factor with levels 1. <=Good and 2. >=Very Good indicating health level of worker
-health_ins: A factor with levels 1. Yes and 2. No indicating whether worker has health insurance
-wage: Workers raw wage [annual salary in USD]
+<li>jobclass: A factor with levels 1. Industrial and 2. Information indicating type of job</li>
+<li>health: A factor with levels 1. <=Good and 2. >=Very Good indicating health level of worker</li>
+<li>health_ins: A factor with levels 1. Yes and 2. No indicating whether worker has health insurance</li>
+<li>wage: Workers raw wage [annual salary in USD]</li>
+</ul>
+
+<h2>Prediction Model</h2>
+The algorithm used to predict wage from this data set is <strong>Linear Regression</strong>.
+Ideally, we should predict wage in a way that accounts for the non-linear relationship between wage and age, 
+using polynomial regression.
 
 
-LM e no polinomial
 </body>
 </html>

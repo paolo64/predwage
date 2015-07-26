@@ -14,12 +14,7 @@ outSummary <- summary(modFit)
 # shinyServer
 #
 shinyServer(function(input, output) {
-  output$distPlot <- renderPlot({
-    x <- Wage$wage
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
-    hist(x, breaks=bins, freq=TRUE, col='darkgreen', border='white')
-  })
-  
+
   dataInput <- reactive({
     df <- data.frame(year=as.numeric(input$year),age=input$age,maritl=input$maritl,race=input$race,
                      education=input$education,jobclass=input$jobclass,health=input$health,health_ins=input$health_ins)
