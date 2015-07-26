@@ -60,7 +60,7 @@ shinyUI(fluidPage(
   See in the boxplot how the wage is affected changing education level and age.
   "),
   br(),
-  em("More technical details are provided in", a("Technical Notes.", href="/technotes.html")),
+  em("More technical details are provided in", a("Technical Notes.", href="/predwage/technotes.html")),
   
   
 
@@ -125,7 +125,11 @@ mainPanel(
              tableOutput("resultpred")
              #plotOutput("ageboxplot")
             ),
-    tabPanel("Wage/Education/Age", plotOutput("ageboxplot")),
+    tabPanel("Wage/Education/Age",
+             h3( "Data Exploration:"),
+             h6("Change the Age variable from slidebar and see in the boxplot how the wage is affected changing education level and age."),
+             plotOutput("ageboxplot")
+             ),
     tabPanel("Model Summary", verbatimTextOutput("summary")),
     tabPanel("Table", dataTableOutput("dtable"))
   ) )
