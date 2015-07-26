@@ -60,7 +60,7 @@ shinyUI(fluidPage(
   See in the boxplot how the wage is affected changing education level and age.
   "),
   br(),
-  em("More technical details are provided in", a("Technical Notes.", href="/predwage/technotes.html")),
+  em("More technical details are provided in", a("Technical Notes.", href="https://paolo0164.shinyapps.io/predwage/technotes.html")),
   
   
 
